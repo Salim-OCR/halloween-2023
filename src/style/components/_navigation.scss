@@ -1,0 +1,30 @@
+.navigation {
+  font-size: 1.4rem;
+  line-height: 35px;
+  color: $color1;
+  width: 100px;
+
+  ul:hover li:not(:hover) {
+    opacity: .5;
+  }
+
+  ul:hover li:hover {
+    color: $color1;
+  }
+
+  li {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .2s linear;
+
+    a {
+      color: $color1;
+
+      &:hover {
+        border-bottom: 1px solid $color1;
+      }
+    }
+  }
+
+}
